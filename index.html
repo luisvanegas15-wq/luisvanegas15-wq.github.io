@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LV Studio · Apps para tu día a día</title>
+<meta name="description" content="Apps de LV Studio para el celular: PlanFuerte (entrenamiento), Refugio (bienestar emocional) y Respira (salir de deudas). Pago único, sin mensualidades.">
+<meta property="og:title" content="LV Studio · Apps para tu día a día">
+<meta property="og:description" content="Entrena, cuida tu mente y organiza tus deudas desde el celular. Pago único.">
+<meta property="og:image" content="https://luisvanegas15-wq.github.io/planfuerte.jpg">
+<meta name="theme-color" content="#16141f">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#16141f;--paper:#f6f3ee;--mute:#6b6779;--line:#e4dfd6}
+*{box-sizing:border-box;margin:0}
+body{font-family:Figtree,system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.5}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{background:var(--ink);color:#f6f3ee;padding:28px 0 64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.06em;font-size:14px}
+.brand b{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#f6f3ee;color:var(--ink);font-family:Fraunces,serif;font-size:16px;letter-spacing:0}
+h1{font-family:Fraunces,serif;font-weight:700;font-size:clamp(34px,7vw,60px);line-height:1.05;margin:48px 0 16px;max-width:14ch}
+h1 em{font-style:normal;color:#f2b84b}
+.lead{color:#bdb8c9;font-size:18px;max-width:46ch}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.pills span{border:1px solid #3a3648;border-radius:99px;padding:6px 14px;font-size:14px;color:#d9d5e2}
+main{margin-top:-32px}
+.apps{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card{background:#fff;border-radius:24px;overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column}
+.shot{height:300px;overflow:hidden;display:flex;justify-content:center;align-items:flex-start;padding-top:28px;background:var(--bg)}
+.shot img{width:200px;border-radius:26px;box-shadow:0 18px 40px rgba(0,0,0,.28);border:6px solid #111}
+.body{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.name{display:flex;align-items:center;gap:10px}
+.name img{width:36px;height:36px;border-radius:10px}
+.name h2{font-family:Fraunces,serif;font-size:26px}
+.tag{color:var(--mute);margin:6px 0 14px}
+ul{padding:0;list-style:none;display:grid;gap:7px;margin-bottom:18px;font-size:15px}
+li{padding-left:22px;position:relative}
+li:before{content:"";position:absolute;left:2px;top:8px;width:9px;height:9px;border-radius:3px;background:var(--ac)}
+.price{display:flex;align-items:baseline;gap:10px;margin-top:auto}
+.price b{font-size:28px}
+.price s{color:var(--mute)}
+.price small{color:var(--mute);font-size:13px}
+.btns{display:grid;gap:8px;margin-top:14px}
+.btn{display:block;text-align:center;text-decoration:none;font-weight:700;padding:13px;border-radius:14px}
+.buy{background:var(--ac);color:var(--on,#fff)}
+.try{border:1.5px solid var(--line)}
+.note{font-size:12.5px;color:var(--mute);margin-top:10px}
+.pf{--bg:linear-gradient(160deg,#1b2a12,#0e140b);--ac:#9be15d;--on:#10200a}
+.rf{--bg:linear-gradient(160deg,#ece6f7,#dfeee9);--ac:#7c6bc4}
+.rs{--bg:linear-gradient(160deg,#2b2850,#17152b);--ac:#e9a82b;--on:#1d1a33}
+section{margin:56px 0}
+h3{font-family:Fraunces,serif;font-size:28px;margin-bottom:18px}
+.steps{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px}
+.step i{font-style:normal;font-family:Fraunces,serif;font-size:30px;color:#c9c2b5}
+.step p{color:var(--mute);font-size:15px}
+.pay{background:var(--ink);color:#f6f3ee;border-radius:24px;padding:28px;display:grid;gap:16px}
+.pay p{color:#bdb8c9}
+.pay .btn{background:#f6f3ee;color:var(--ink);max-width:340px}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--mute);font-size:13px}
+footer p+p{margin-top:8px}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <div class="brand"><b>LV</b> LV STUDIO</div>
+  <h1>Apps que te acompañan <em>todos los días</em></h1>
+  <p class="lead">Entrena con un plan, cuida tu mente y sal de deudas, todo desde tu celular. Hechas en Colombia, en español y con pago único.</p>
+  <div class="pills"><span>Sin mensualidades</span><span>Se instalan como app</span><span>Pruébalas gratis</span></div>
+ </div>
+</header>
+
+<main class="wrap">
+ <div class="apps">
+
+  <article class="card pf">
+   <div class="shot"><img src="planfuerte.jpg" alt="Pantalla de PlanFuerte" loading="lazy"></div>
+   <div class="body">
+    <div class="name"><img src="pf-icon.png" alt=""><h2>PlanFuerte</h2></div>
+    <p class="tag">Tu entrenador personal en el celular.</p>
+    <ul>
+     <li>Plan para gimnasio o casa según tu objetivo</li>
+     <li>42 ejercicios animados con errores comunes</li>
+     <li>Programa de 12 semanas</li>
+     <li>Nutrición con comida colombiana</li>
+    </ul>
+    <div class="price"><b>$29.900</b><s>$39.900</s><small>pago único</small></div>
+    <div class="btns">
+     <a class="btn buy" href="https://pay.hotmart.com/D108492190R">Comprar PlanFuerte</a>
+     <a class="btn try" href="https://luisvanegas15-wq.github.io/Plan-Fuerte/">Probar gratis 3 días</a>
+    </div>
+   </div>
+  </article>
+
+  <article class="card rf">
+   <div class="shot"><img src="refugio.jpg" alt="Pantalla de Refugio" loading="lazy"></div>
+   <div class="body">
+    <div class="name"><img src="rf-icon.png" alt=""><h2>Refugio</h2></div>
+    <p class="tag">Tu espacio de calma en el celular.</p>
+    <ul>
+     <li>Botón SOS con líneas de ayuda y tus contactos</li>
+     <li>Técnicas para ansiedad, pánico, duelo y TDAH</li>
+     <li>Programas de 7 días y diario de ánimo</li>
+     <li>Privada: protegida con PIN</li>
+    </ul>
+    <div class="price"><b>$29.900</b><s>$39.900</s><small>pago único</small></div>
+    <div class="btns">
+     <a class="btn buy" href="https://pay.hotmart.com/W108491961V">Comprar Refugio</a>
+     <a class="btn try" href="https://luisvanegas15-wq.github.io/Refugio/">Probar gratis 7 días</a>
+    </div>
+    <p class="note">Herramienta de apoyo. No reemplaza la atención profesional. En una emergencia llama al 123.</p>
+   </div>
+  </article>
+
+  <article class="card rs">
+   <div class="shot"><img src="respira.jpg" alt="Pantalla de Respira" loading="lazy"></div>
+   <div class="body">
+    <div class="name"><img src="rs-icon.png" alt=""><h2>Respira</h2></div>
+    <p class="tag">Tu plan para salir de deudas, a tu ritmo.</p>
+    <ul>
+     <li>Todas tus deudas en un solo lugar</li>
+     <li>Plan con método bola de nieve o avalancha</li>
+     <li>Registro de pagos y estado de cuenta</li>
+     <li>Perfil de ejemplo para explorarla antes</li>
+    </ul>
+    <div class="price"><b>$39.900</b><small>pago único</small></div>
+    <div class="btns">
+     <a class="btn buy" href="https://go.hotmart.com/E108475674H?dp=1">Comprar Respira</a>
+     <a class="btn try" href="https://luisvanegas15-wq.github.io/Respira/">Ver la demostración</a>
+    </div>
+   </div>
+  </article>
+
+ </div>
+
+ <section>
+  <h3>¿Cómo funciona?</h3>
+  <div class="steps">
+   <div class="step"><i>1</i><p><b>Pruébala gratis</b> desde el enlace. No necesitas tarjeta.</p></div>
+   <div class="step"><i>2</i><p><b>Cómprala</b> con tarjeta o PSE por Hotmart, con garantía de 7 días.</p></div>
+   <div class="step"><i>3</i><p><b>Recibe tu activación</b> por correo o WhatsApp y sigue donde ibas.</p></div>
+   <div class="step"><i>4</i><p><b>Instálala</b>: en el navegador toca Compartir o el menú → Agregar a inicio.</p></div>
+  </div>
+ </section>
+
+ <section class="pay">
+  <h3 style="margin:0">¿Prefieres pagar por Nequi o Bancolombia?</h3>
+  <p>Escríbeme por Instagram con el nombre de la app que quieres. Te paso los datos de pago y, cuando envíes el comprobante, te mando tu activación.</p>
+  <a class="btn" href="https://ig.me/m/lv.studio.apps">Escribirme por Instagram</a>
+ </section>
+</main>
+
+<footer class="wrap">
+ <p>© 2026 LV Studio · Luis Adolfo Vanegas Lasso · Colombia</p>
+ <p>Instagram <a href="https://instagram.com/lv.studio.apps">@lv.studio.apps</a>. PlanFuerte no reemplaza la asesoría médica ni nutricional. Refugio no reemplaza la atención psicológica: en crisis llama al 123 o a la línea 106.</p>
+</footer>
+</body>
+</html>
